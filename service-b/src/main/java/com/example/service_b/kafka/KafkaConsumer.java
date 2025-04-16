@@ -10,5 +10,25 @@ public class KafkaConsumer {
     @KafkaListener(topics = "test-topic", groupId = "service-b")
     public void listen(ConsumerRecord<String, String> record) {
         System.out.println("Service B received: " + record.value());
+
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" message   =    " + record.value());
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+
     }
 }

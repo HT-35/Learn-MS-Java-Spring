@@ -15,7 +15,30 @@ public class KafkaController {
 
     @PostMapping("/send")
     public String sendMessage(@RequestBody String message) {
+
         kafkaTemplate.send("test-topic", message);
+        
+
+
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" message   =    " + message);
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+
         return "Message sent: " + message;
     }
 }
